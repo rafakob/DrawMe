@@ -1,0 +1,33 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="TextDivider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">24dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:textColor">#DD000000</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+
+    <style name="RoundedButton">
+        <item name="android:textAllCaps">true</item>
+        <item name="backColor">@color/colorAccent</item>
+        <item name="backColorDisabled">@android:color/darker_gray</item>
+        <item name="backColorPressed">@color/colorPrimary</item>
+        <item name="radius">24dp</item>
+        <item name="radiusTopRight">48dp</item>
+        <item name="stroke">4dp</item>
+        <item name="strokeColor">@color/colorPrimary</item>
+        <item name="strokeColorDisabled">@android:color/darker_gray</item>
+        <item name="strokeColorPressed">@color/colorPrimaryDark</item>
+    </style>
+
+
+</resources>

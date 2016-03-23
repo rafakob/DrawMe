@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DrawMe">
+        <attr name="backColor" format="color"/>
+        <attr name="backColorDisabled" format="color"/>
+        <attr name="backColorPressed" format="color"/>
+        <attr name="maskBrightnessThreshold" format="float"/>
+        <attr name="maskColorPressed" format="color"/>
+        <attr name="maskColorPressedInverse" format="color"/>
+        <attr name="maskColorDisabled" format="color"/>
+        <attr name="radius" format="dimension"/>
+        <attr name="radiusBottomLeft" format="dimension"/>
+        <attr name="radiusBottomRight" format="dimension"/>
+        <attr name="radiusTopLeft" format="dimension"/>
+        <attr name="radiusTopRight" format="dimension"/>
+        <attr name="rippleEffect" format="boolean"/>
+        <attr name="rippleUseControlHighlight" format="boolean"/>
+        <attr name="shapeEqualWidthHeight" format="boolean"/>
+        <attr name="shapeRadiusHalfHeight" format="boolean"/>
+        <attr name="stateDisabled" format="boolean"/>
+        <attr name="statePressed" format="boolean"/>
+        <attr name="stroke" format="dimension"/>
+        <attr name="strokeColor" format="color"/>
+        <attr name="strokeColorDisabled" format="color"/>
+        <attr name="strokeColorPressed" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="DrawMeText">
+        <attr name="font" format="string"/>
+        <attr name="textColor" format="color"/>
+        <attr name="textColorDisabled" format="color"/>
+        <attr name="textColorPressed" format="color"/>
+    </declare-styleable>
+</resources>
