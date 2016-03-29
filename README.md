@@ -83,19 +83,20 @@ _Standard way:_
 
 <!--layout/activity_main.xml-->
 <Button
-    android:layout_width="100dp"
-    android:layout_height="100dp"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
     android:background="@drawable/custom_button.xml"/>
 ```
 
 **_With DrawMe:_**
 ```xml
 <com.rafakob.drawme.DrawMeButton
-    android:layout_width="100dp"
-    android:layout_height="100dp"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
     drawme:backColor="@color/colorButtonGreen"
     drawme:backColorPressed="@color/colorButtonGreenFocused"
-    drawme:backColorDisabled="@color/colorDarkGray"/>
+    drawme:backColorDisabled="@color/colorDarkGray"
+    drawme:shapeRadiusHalfHeight="true"/>
 ```
 **_Result_**
 
