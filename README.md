@@ -98,14 +98,19 @@ _Standard way:_
     drawme:backColorDisabled="@color/colorDarkGray"/>
 ```
 **_Result_**
-| Pre Lollipop        |  +21       |
-| ------------- |:-------------:|
-|  ![](http://i.imgur.com/mOYsFsu.gif)     | ![](http://i.imgur.com/NgFrb78.gif) |
+
+_Pre Lollipop_
+
+![](http://i.imgur.com/mOYsFsu.gif)
+
+_API +21_
+
+![](http://i.imgur.com/NgFrb78.gif)
 
 
 
 
-> If you find any bugs feel free to report an issue or create a pull request. Suggestions and feature requestes are welcome.
+
 
 ## Install ##
 Add it in your root build.gradle at the end of repositories:
@@ -123,6 +128,8 @@ dependencies {
         compile 'com.github.rafakob:DrawMe:0.1.0'
 }
 ```
+
+> If you find any bugs feel free to report an issue or create a pull request. Suggestions and feature requestes are welcome.
 
 ## Features ##
 
