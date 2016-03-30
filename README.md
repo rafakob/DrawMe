@@ -123,6 +123,7 @@ allprojects {
 }
 ```
 Add the dependency:
+
 [![](https://jitpack.io/v/rafakob/DrawMe.svg)](https://jitpack.io/#rafakob/DrawMe)
 ```java
 dependencies {
