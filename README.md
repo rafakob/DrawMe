@@ -123,7 +123,6 @@ allprojects {
 }
 ```
 Add the dependency:
-
 [![](https://jitpack.io/v/rafakob/DrawMe.svg)](https://jitpack.io/#rafakob/DrawMe)
 ```java
 dependencies {
@@ -207,6 +206,7 @@ All above attributes can be applied to them.
 Avaiable views:
 - `DrawMeButton`
 - `DrawMeTextView`
+- `DrawMeEditText`
 
 | Attribute      	  | Format | Default | Description     |
 | :---           	  | :---:  | :---:   | :---            |
@@ -214,10 +214,13 @@ Avaiable views:
 | `textColor`             | color  | System default       | Text color - default state. Same as `android:textColor`. |
 | `textColorPressed`      | color  | `textColor`       | Text color - pressed state. |
 | `textColorDisabled`     | color  | `textColor`       | Text color - disabled state. |
+| `drawableTint`          | color  | none       | Equivalent to `android:drawableTint` but it's compatible with preLollipop devices.  |
+| `drawableTintMode`      | enum   | none       | Equivalent to `android:drawableTintMode` but it's compatible with preLollipop devices. |
 
 - Custom fonts has to be put in `assets/fonts`. Library uses font caching.
+- Tintintg is performed using `DrawableCompat.wrap()` method. 
 
-![](https://i.imgur.com/uJacWd4.png)
+![](https://i.imgur.com/V7oOMCb.png)
 
 
 ### Advanced - mask, adaptive highlight ###
