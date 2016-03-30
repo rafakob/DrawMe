@@ -180,6 +180,8 @@
             android:gravity="center_horizontal"
             android:padding="12dp"
             android:text="My text"
+            android:layout_marginBottom="8dp"
+
             android:textAllCaps="true"
             android:textSize="18sp"
             drawme:font="Lato-Bold.ttf"
@@ -189,8 +191,17 @@
             drawme:stroke="4dp"
             drawme:strokeColor="@color/colorAccent"/>
 
+        <com.rafakob.drawme.DrawMeEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:drawableLeft="@drawable/ic_vector_cloud"
+            android:drawablePadding="16dp"
+            android:padding="8dp"
+            android:hint="EditText with tinted icon"
+            drawme:drawableTint="@color/colorAccent"/>
 
-        <TextView
+        <TextView22
             style="@style/TextDivider"
             android:text="#07: Layouts"/>
 

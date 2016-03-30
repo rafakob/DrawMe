@@ -26,9 +26,37 @@
     </declare-styleable>
 
     <declare-styleable name="DrawMeText">
+        <attr name="android:drawableLeft"/>
+        <attr name="android:drawableStart"/>
+        <attr name="android:drawableEnd"/>
+        <attr name="android:drawableRight"/>
+        <attr name="android:drawableTop"/>
+        <attr name="android:drawableBottom"/>
+        <attr name="drawableTint" format="color"/>
+        <attr name="drawableTintMode" format="integer">
+            <enum name="clear" value="0"/>
+            <enum name="src" value="1"/>
+            <enum name="dst" value="2"/>
+            <enum name="src_over" value="3"/>
+            <enum name="dst_over" value="4"/>
+            <enum name="src_in" value="5"/>
+            <enum name="dst_in" value="6"/>
+            <enum name="src_out" value="7"/>
+            <enum name="dst_out" value="8"/>
+            <enum name="src_atop" value="9"/>
+            <enum name="dst_atop" value="10"/>
+            <enum name="xor" value="11"/>
+            <enum name="darken" value="16"/>
+            <enum name="lighten" value="17"/>
+            <enum name="multiply" value="13"/>
+            <enum name="screen" value="14"/>
+            <enum name="add" value="12"/>
+            <enum name="overlay" value="15"/>
+        </attr>
         <attr name="font" format="string"/>
         <attr name="textColor" format="color"/>
         <attr name="textColorDisabled" format="color"/>
         <attr name="textColorPressed" format="color"/>
     </declare-styleable>
 </resources>
+
