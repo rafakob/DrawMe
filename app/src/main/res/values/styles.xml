@@ -18,15 +18,15 @@
 
     <style name="RoundedButton">
         <item name="android:textAllCaps">true</item>
-        <item name="backColor">@color/colorAccent</item>
-        <item name="backColorDisabled">@android:color/darker_gray</item>
-        <item name="backColorPressed">@color/colorPrimary</item>
-        <item name="radius">24dp</item>
-        <item name="radiusTopRight">48dp</item>
-        <item name="stroke">4dp</item>
-        <item name="strokeColor">@color/colorPrimary</item>
-        <item name="strokeColorDisabled">@android:color/darker_gray</item>
-        <item name="strokeColorPressed">@color/colorPrimaryDark</item>
+        <item name="dm_backColor">@color/colorAccent</item>
+        <item name="dm_backColorDisabled">@android:color/darker_gray</item>
+        <item name="dm_backColorPressed">@color/colorPrimary</item>
+        <item name="dm_radius">24dp</item>
+        <item name="dm_radiusTopRight">48dp</item>
+        <item name="dm_stroke">4dp</item>
+        <item name="dm_strokeColor">@color/colorPrimary</item>
+        <item name="dm_strokeColorDisabled">@android:color/darker_gray</item>
+        <item name="dm_strokeColorPressed">@color/colorPrimaryDark</item>
     </style>
 
 
