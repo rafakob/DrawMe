@@ -30,10 +30,10 @@ _Standard way:_
 <com.rafakob.drawme.DrawMeFrameLayout
     android:layout_width="100dp"
     android:layout_height="100dp"
-    drawme:backColor="@android:color/white"
-    drawme:strokeColor="@android:color/black"
-    drawme:radius="5dp"
-    drawme:stroke="3dp"/>
+    drawme:dm_backColor="@android:color/white"
+    drawme:dm_strokeColor="@android:color/black"
+    drawme:dm_radius="5dp"
+    drawme:dm_stroke="3dp"/>
 ```
 
 
@@ -95,10 +95,10 @@ _Standard way:_
 <com.rafakob.drawme.DrawMeButton
     android:layout_width="match_parent"
     android:layout_height="50dp"
-    drawme:backColor="@color/colorButtonGreen"
-    drawme:backColorPressed="@color/colorButtonGreenFocused"
-    drawme:backColorDisabled="@color/colorDarkGray"
-    drawme:shapeRadiusHalfHeight="true"/>
+    drawme:dm_backColor="@color/colorButtonGreen"
+    drawme:dm_backColorPressed="@color/colorButtonGreenFocused"
+    drawme:dm_backColorDisabled="@color/colorDarkGray"
+    drawme:dm_shapeRadiusHalfHeight="true"/>
 ```
 **_Result_**
 
@@ -146,18 +146,18 @@ To fully understand everything just play around with it for a while. No rocket s
  
 | Attribute      	  | Format            | Default | Description     |
 | :---           	  | :---:             | :---:   | :---            |
-| `stroke`   		  | dimension         | 0       | Stroke width. |
-| `radius`     		  | dimension         | 0       | Corner radius. |
-| `radiusBottomLeft`      | dimension         | -1      | "-1" means that attribute will be ignored. |
-| `radiusBottomRight`     | dimension         | -1      | as above |
-| `radiusTopLeft`     	  | dimension         | -1      | as above |
-| `radiusTopRight`     	  | dimension         | -1      | as above |
-| `shapeRadiusHalfHeight` | boolean           | false   | True - use "full radius", other radius dimensions will be ignored. |
-| `shapeEqualWidthHeight` | boolean           | false   | True - shape will have equal height and width. |
+| `dm_stroke`   		  | dimension         | 0       | Stroke width. |
+| `dm_radius`     		  | dimension         | 0       | Corner radius. |
+| `dm_radiusBottomLeft`      | dimension         | -1      | "-1" means that attribute will be ignored. |
+| `dm_radiusBottomRight`     | dimension         | -1      | as above |
+| `dm_radiusTopLeft`     	  | dimension         | -1      | as above |
+| `dm_radiusTopRight`     	  | dimension         | -1      | as above |
+| `dm_shapeRadiusHalfHeight` | boolean           | false   | True - use "full radius", other radius dimensions will be ignored. |
+| `dm_shapeEqualWidthHeight` | boolean           | false   | True - shape will have equal height and width. |
 
 
-- Set `shapeRadiusHalfHeight` and `shapeEqualWidthHeight` in order to create a circle.
-- You can combine `radius` with other radius dimensions, it works just like padding.
+- Set `dm_shapeRadiusHalfHeight` and `dm_shapeEqualWidthHeight` in order to create a circle.
+- You can combine `dm_radius` with other radius dimensions, it works just like padding.
  
 ![](https://i.imgur.com/3ABA2jL.png)
 
@@ -167,10 +167,10 @@ To fully understand everything just play around with it for a while. No rocket s
  
 | Attribute      	      | Format   | Default | Description     |
 | :---           	      | :---:    | :---:   | :---            |
-| `rippleEffect`              | boolean  | true    | True - use ripple effect on API +21. False - use standard StateListDrawable on all devices. |
-| `rippleUseControlHighlight` | boolean  | true    | Use theme attribute `R.attr.colorControlHighlight` as a ripple color. It's avaiable only on +21, and it's basically a `1F000000` color. On lower API "mimic" this highlight by mixing background color with a black mask (it should look almost the same as on +21).  Matters only when pressed background color hasn't been specified. |
-| `statePressed`              | boolean  | true    | True - create pressed state. False - ignore it. |
-| `stateDisabled`             | boolean  | true    | True - create disabled state. False - ignore it. |
+| `dm_rippleEffect`              | boolean  | true    | True - use ripple effect on API +21. False - use standard StateListDrawable on all devices. |
+| `dm_rippleUseControlHighlight` | boolean  | true    | Use theme attribute `R.attr.colorControlHighlight` as a ripple color. It's avaiable only on +21, and it's basically a `1F000000` color. On lower API "mimic" this highlight by mixing background color with a black mask (it should look almost the same as on +21).  Matters only when pressed background color hasn't been specified. |
+| `dm_statePressed`              | boolean  | true    | True - create pressed state. False - ignore it. |
+| `dm_stateDisabled`             | boolean  | true    | True - create disabled state. False - ignore it. |
 
 First button is in normal state. Second is pressed with default ripple highlight. Third one uses custom color as pressed ripple effect:
 
@@ -180,12 +180,12 @@ First button is in normal state. Second is pressed with default ripple highlight
  
 | Attribute      	  | Format | Default | Description     |
 | :---           	  | :---:  | :---:   | :---            |
-| `backColor`             | color  | `Color.TRANSPARENT`       | Background color - default state. |
-| `backColorPressed`      | color  | Dark highlight (like ripple)       | Background color - pressed state. |
-| `backColorDisabled`     | color  | Grayed out `backColor`      | Background color - disabled state. |
-| `strokeColor`           | color  | `Color.GRAY`     | Stroke color - default state. |
-| `strokeColorPressed`    | color  | Dark highlight (like ripple)      | Stroke color - pressed state. |
-| `strokeColorDisabled`   | color  | Grayed out `strokeColor`      | Stroke color - disabled state. |
+| `dm_backColor`             | color  | `Color.TRANSPARENT`       | Background color - default state. |
+| `dm_backColorPressed`      | color  | Dark highlight (like ripple)       | Background color - pressed state. |
+| `dm_backColorDisabled`     | color  | Grayed out `backColor`      | Background color - disabled state. |
+| `dm_strokeColor`           | color  | `Color.GRAY`     | Stroke color - default state. |
+| `dm_strokeColorPressed`    | color  | Dark highlight (like ripple)      | Stroke color - pressed state. |
+| `dm_strokeColorDisabled`   | color  | Grayed out `strokeColor`      | Stroke color - disabled state. |
 
 - If you're not gonna define any attribute, view will have transaprent borderless background with pressed state like ripple effect.
 - Use `android:stateListAnimator="@null"` to disable default press shadow/elevation on +21.
@@ -213,12 +213,12 @@ Avaiable views:
 
 | Attribute      	  | Format | Default | Description     |
 | :---           	  | :---:  | :---:   | :---            |
-| `font`                  | string | null    | Name of a custom font, eg. `Lato-Regular.ttf`.|
-| `textColor`             | color  | System default       | Text color - default state. Same as `android:textColor`. |
-| `textColorPressed`      | color  | `textColor`       | Text color - pressed state. |
-| `textColorDisabled`     | color  | `textColor`       | Text color - disabled state. |
-| `drawableTint`          | color  | none       | Equivalent to `android:drawableTint` but it's compatible with preLollipop devices.  |
-| `drawableTintMode`      | enum   | none       | Equivalent to `android:drawableTintMode` but it's compatible with preLollipop devices. |
+| `dm_font`                  | string | null    | Name of a custom font, eg. `Lato-Regular.ttf`.|
+| `dm_textColor`             | color  | System default       | Text color - default state. Same as `android:textColor`. |
+| `dm_textColorPressed`      | color  | `textColor`       | Text color - pressed state. |
+| `dm_textColorDisabled`     | color  | `textColor`       | Text color - disabled state. |
+| `dm_drawableTint`          | color  | none       | Equivalent to `android:drawableTint` but it's compatible with preLollipop devices.  |
+| `dm_drawableTintMode`      | enum   | none       | Equivalent to `android:drawableTintMode` but it's compatible with preLollipop devices. |
 
 - Custom fonts has to be put in `assets/fonts`. Library uses font caching.
 - Tintintg is performed using `DrawableCompat.wrap()` method. 
@@ -230,12 +230,12 @@ Avaiable views:
 
 | Attribute      	  | Format | Default |
 | :---           	  | :---:  | :---:   |
-| `maskColorPressed`             | color  | `#1F00000`       |
-| `maskColorPressedInverse`      | color  | `#1DFFFFFF`       |
-| `maskColorDisabled`     | color  | `#6DFFFFFF`      |
-| `maskBrightnessThreshold`           | float [0 - 1]  | 0     |
+| `dm_maskColorPressed`             | color  | `#1F00000`       |
+| `dm_maskColorPressedInverse`      | color  | `#1DFFFFFF`       |
+| `dm_maskColorDisabled`     | color  | `#6DFFFFFF`      |
+| `dm_maskBrightnessThreshold`           | float [0 - 1]  | 0     |
 
-By default ripple color is just a blackish shadow over normal state color. I've added an option to adjust that shadow mask. Same applies to disabled color. Just modify `maskColorPressed` and `maskColorDisabled`:
+By default ripple color is just a blackish shadow over normal state color. I've added an option to adjust that shadow mask. Same applies to disabled color. Just modify `dm_maskColorPressed` and `dm_maskColorDisabled`:
 
 ![](https://i.imgur.com/S4Cehtx.png)
 
@@ -243,17 +243,17 @@ By default ripple color is just a blackish shadow over normal state color. I've 
 
 But what when I have a black or very dark buttons? Ripple effect won't be visiable. In that case you have three options:
 - leave it as is
-- change `maskColorPressed` to a lighter color
-- use an adaptive method by modifing `maskBrightnessThreshold`
+- change `dm_maskColorPressed` to a lighter color
+- use an adaptive method by modifing `dm_maskBrightnessThreshold`
 
 So how the adaption works?
 - Library calculates background color brightness: 0.0 means that background is black, 1.0 means it's white.
-- Compare background brightness with `maskBrightnessThreshold`. If it's lower than use `maskColorPressedInverse` instead of `maskColorPressed`.
+- Compare background brightness with `dm_maskBrightnessThreshold`. If it's lower than use `dm_maskColorPressedInverse` instead of `dm_maskColorPressed`.
 
 Example:
 - `maskBrightnessThreshold = 0.2`
-- Button X has background brightness `0.8` -> use `maskColorPressed` -> ripple will be darker than background color 
-- Button Y has background brightness `0.1` -> use `maskColorPressedInverse` -> ripple will be lighter than background color
+- Button X has background brightness `0.8` -> use `dm_maskColorPressed` -> ripple will be darker than background color 
+- Button Y has background brightness `0.1` -> use `dm_maskColorPressedInverse` -> ripple will be lighter than background color
 
 ![](https://i.imgur.com/JXAUpVX.png)
 
@@ -262,6 +262,11 @@ Example:
 > If you find any bugs feel free to report an issue or create a pull request. Suggestions and feature requestes are very welcome.
 
 > Use it wherever and however you want.
+
+
+## Changelog ##
+#####`0.1.5` (2016-04-01):#####
+ - Added `dm_` prefix for all attributes.
 
 
 ## License ##

@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <declare-styleable name="DrawMe">
-        <attr name="backColor" format="color"/>
-        <attr name="backColorDisabled" format="color"/>
-        <attr name="backColorPressed" format="color"/>
-        <attr name="maskBrightnessThreshold" format="float"/>
-        <attr name="maskColorPressed" format="color"/>
-        <attr name="maskColorPressedInverse" format="color"/>
-        <attr name="maskColorDisabled" format="color"/>
-        <attr name="radius" format="dimension"/>
-        <attr name="radiusBottomLeft" format="dimension"/>
-        <attr name="radiusBottomRight" format="dimension"/>
-        <attr name="radiusTopLeft" format="dimension"/>
-        <attr name="radiusTopRight" format="dimension"/>
-        <attr name="rippleEffect" format="boolean"/>
-        <attr name="rippleUseControlHighlight" format="boolean"/>
-        <attr name="shapeEqualWidthHeight" format="boolean"/>
-        <attr name="shapeRadiusHalfHeight" format="boolean"/>
-        <attr name="stateDisabled" format="boolean"/>
-        <attr name="statePressed" format="boolean"/>
-        <attr name="stroke" format="dimension"/>
-        <attr name="strokeColor" format="color"/>
-        <attr name="strokeColorDisabled" format="color"/>
-        <attr name="strokeColorPressed" format="color"/>
+        <attr name="dm_backColor" format="color"/>
+        <attr name="dm_backColorDisabled" format="color"/>
+        <attr name="dm_backColorPressed" format="color"/>
+        <attr name="dm_maskBrightnessThreshold" format="float"/>
+        <attr name="dm_maskColorPressed" format="color"/>
+        <attr name="dm_maskColorPressedInverse" format="color"/>
+        <attr name="dm_maskColorDisabled" format="color"/>
+        <attr name="dm_radius" format="dimension"/>
+        <attr name="dm_radiusBottomLeft" format="dimension"/>
+        <attr name="dm_radiusBottomRight" format="dimension"/>
+        <attr name="dm_radiusTopLeft" format="dimension"/>
+        <attr name="dm_radiusTopRight" format="dimension"/>
+        <attr name="dm_rippleEffect" format="boolean"/>
+        <attr name="dm_rippleUseControlHighlight" format="boolean"/>
+        <attr name="dm_shapeEqualWidthHeight" format="boolean"/>
+        <attr name="dm_shapeRadiusHalfHeight" format="boolean"/>
+        <attr name="dm_stateDisabled" format="boolean"/>
+        <attr name="dm_statePressed" format="boolean"/>
+        <attr name="dm_stroke" format="dimension"/>
+        <attr name="dm_strokeColor" format="color"/>
+        <attr name="dm_strokeColorDisabled" format="color"/>
+        <attr name="dm_strokeColorPressed" format="color"/>
     </declare-styleable>
 
     <declare-styleable name="DrawMeText">
@@ -32,8 +32,8 @@
         <attr name="android:drawableRight"/>
         <attr name="android:drawableTop"/>
         <attr name="android:drawableBottom"/>
-        <attr name="drawableTint" format="color"/>
-        <attr name="drawableTintMode" format="integer">
+        <attr name="dm_drawableTint" format="color"/>
+        <attr name="dm_drawableTintMode" format="integer">
             <enum name="clear" value="0"/>
             <enum name="src" value="1"/>
             <enum name="dst" value="2"/>
@@ -53,10 +53,10 @@
             <enum name="add" value="12"/>
             <enum name="overlay" value="15"/>
         </attr>
-        <attr name="font" format="string"/>
-        <attr name="textColor" format="color"/>
-        <attr name="textColorDisabled" format="color"/>
-        <attr name="textColorPressed" format="color"/>
+        <attr name="dm_font" format="string"/>
+        <attr name="dm_textColor" format="color"/>
+        <attr name="dm_textColorDisabled" format="color"/>
+        <attr name="dm_textColorPressed" format="color"/>
     </declare-styleable>
 </resources>
 

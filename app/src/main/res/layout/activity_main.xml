@@ -43,7 +43,7 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:text="Normal"
-            drawme:backColor="@color/colorAccent"/>
+            drawme:dm_backColor="@color/colorAccent"/>
 
         <com.rafakob.drawme.DrawMeButton
             android:id="@+id/colored_pressed1"
@@ -52,21 +52,21 @@
             android:stateListAnimator="@null"
             android:text="Pressed without animator"
 
-            drawme:backColor="@color/colorAccent"/>
+            drawme:dm_backColor="@color/colorAccent"/>
 
         <com.rafakob.drawme.DrawMeButton
             android:id="@+id/colored_pressed2"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:text="Pressed"
-            drawme:backColor="@color/colorAccent"/>
+            drawme:dm_backColor="@color/colorAccent"/>
 
         <com.rafakob.drawme.DrawMeButton
             android:id="@+id/colored_disabled"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:text="Disabled"
-            drawme:backColor="@color/colorAccent"/>
+            drawme:dm_backColor="@color/colorAccent"/>
 
 
         <TextView
@@ -104,21 +104,21 @@
             android:layout_height="50dp"
             android:layout_marginBottom="8dp"
             android:text="Rounded"
-            drawme:backColor="@color/colorGreen"
-            drawme:font="Lato-Bold.ttf"
-            drawme:shapeRadiusHalfHeight="true"
-            drawme:textColor="@android:color/white"/>
+            drawme:dm_backColor="@color/colorGreen"
+            drawme:dm_font="Lato-Bold.ttf"
+            drawme:dm_shapeRadiusHalfHeight="true"
+            drawme:dm_textColor="@android:color/white"/>
 
         <com.rafakob.drawme.DrawMeButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:text="Circle"
-            drawme:backColor="@color/colorGreen"
-            drawme:font="Lato-Bold.ttf"
-            drawme:shapeEqualWidthHeight="true"
-            drawme:shapeRadiusHalfHeight="true"
-            drawme:textColor="@android:color/white"/>
+            drawme:dm_backColor="@color/colorGreen"
+            drawme:dm_font="Lato-Bold.ttf"
+            drawme:dm_shapeEqualWidthHeight="true"
+            drawme:dm_shapeRadiusHalfHeight="true"
+            drawme:dm_textColor="@android:color/white"/>
 
         <TextView
             style="@style/TextDivider"
@@ -129,11 +129,11 @@
             android:layout_height="60dp"
             android:layout_marginBottom="8dp"
             android:text="Control highlight"
-            drawme:backColor="@color/colorBlue"
-            drawme:shapeRadiusHalfHeight="true"
-            drawme:stroke="12dp"
-            drawme:strokeColor="@color/colorYellow"
-            drawme:textColor="@android:color/white"/>
+            drawme:dm_backColor="@color/colorBlue"
+            drawme:dm_shapeRadiusHalfHeight="true"
+            drawme:dm_stroke="12dp"
+            drawme:dm_strokeColor="@color/colorYellow"
+            drawme:dm_textColor="@android:color/white"/>
 
         <com.rafakob.drawme.DrawMeButton
             android:id="@+id/ctrl_pressed1"
@@ -141,23 +141,23 @@
             android:layout_height="60dp"
             android:layout_marginBottom="8dp"
             android:text="Control highlight"
-            drawme:backColor="@color/colorBlue"
-            drawme:shapeRadiusHalfHeight="true"
-            drawme:stroke="12dp"
-            drawme:strokeColor="@color/colorYellow"
-            drawme:textColor="@android:color/white"/>
+            drawme:dm_backColor="@color/colorBlue"
+            drawme:dm_shapeRadiusHalfHeight="true"
+            drawme:dm_stroke="12dp"
+            drawme:dm_strokeColor="@color/colorYellow"
+            drawme:dm_textColor="@android:color/white"/>
 
         <com.rafakob.drawme.DrawMeButton
             android:id="@+id/ctrl_pressed2"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="Dim background color"
-            drawme:backColor="@color/colorBlue"
-            drawme:rippleUseControlHighlight="false"
-            drawme:shapeRadiusHalfHeight="true"
-            drawme:stroke="12dp"
-            drawme:strokeColor="@color/colorYellow"
-            drawme:textColor="@android:color/white"/>
+            drawme:dm_backColor="@color/colorBlue"
+            drawme:dm_rippleUseControlHighlight="false"
+            drawme:dm_shapeRadiusHalfHeight="true"
+            drawme:dm_stroke="12dp"
+            drawme:dm_strokeColor="@color/colorYellow"
+            drawme:dm_textColor="@android:color/white"/>
 
         <TextView
             style="@style/TextDivider"
@@ -171,7 +171,7 @@
             android:gravity="center_horizontal"
             android:padding="12dp"
             android:text="My text"
-            drawme:stroke="2dp"/>
+            drawme:dm_stroke="2dp"/>
 
         <com.rafakob.drawme.DrawMeTextView
             android:layout_width="wrap_content"
@@ -185,12 +185,12 @@
 
             android:textAllCaps="true"
             android:textSize="18sp"
-            drawme:font="Lato-Bold.ttf"
-            drawme:radius="16dp"
-            drawme:stateDisabled="false"
-            drawme:statePressed="false"
-            drawme:stroke="4dp"
-            drawme:strokeColor="@color/colorAccent"/>
+            drawme:dm_font="Lato-Bold.ttf"
+            drawme:dm_radius="16dp"
+            drawme:dm_stateDisabled="false"
+            drawme:dm_statePressed="false"
+            drawme:dm_stroke="4dp"
+            drawme:dm_strokeColor="@color/colorAccent"/>
 
         <com.rafakob.drawme.DrawMeEditText
             android:layout_width="match_parent"
@@ -200,7 +200,7 @@
             android:drawablePadding="16dp"
             android:padding="8dp"
             android:hint="EditText with tinted icon"
-            drawme:drawableTint="@color/colorAccent"/>
+            drawme:dm_drawableTint="@color/colorAccent"/>
 
         <TextView
             style="@style/TextDivider"
@@ -211,9 +211,9 @@
             android:layout_height="wrap_content"
             android:clickable="true"
             android:padding="16dp"
-            drawme:radius="16dp"
-            drawme:stroke="4dp"
-            drawme:strokeColor="@color/colorGreen">
+            drawme:dm_radius="16dp"
+            drawme:dm_stroke="4dp"
+            drawme:dm_strokeColor="@color/colorGreen">
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -227,8 +227,8 @@
                 android:layout_height="100dp"
                 android:layout_centerInParent="true"
                 android:clickable="true"
-                drawme:backColor="@color/colorAccent"
-                drawme:shapeRadiusHalfHeight="true"/>
+                drawme:dm_backColor="@color/colorAccent"
+                drawme:dm_shapeRadiusHalfHeight="true"/>
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -247,9 +247,9 @@
             android:layout_height="50dp"
             android:layout_marginBottom="8dp"
             android:text="Normal"
-            drawme:backColor="@color/colorAccent"
-            drawme:rippleUseControlHighlight="false"
-            drawme:textColor="@android:color/white"/>
+            drawme:dm_backColor="@color/colorAccent"
+            drawme:dm_rippleUseControlHighlight="false"
+            drawme:dm_textColor="@android:color/white"/>
 
         <com.rafakob.drawme.DrawMeButton
             android:id="@+id/mask_def"
@@ -257,9 +257,9 @@
             android:layout_height="50dp"
             android:layout_marginBottom="8dp"
             android:text="Pressed - Default mask"
-            drawme:backColor="@color/colorAccent"
-            drawme:rippleUseControlHighlight="false"
-            drawme:textColor="@android:color/white"/>
+            drawme:dm_backColor="@color/colorAccent"
+            drawme:dm_rippleUseControlHighlight="false"
+            drawme:dm_textColor="@android:color/white"/>
 
         <com.rafakob.drawme.DrawMeButton
             android:id="@+id/mask_dark"
@@ -267,10 +267,10 @@
             android:layout_height="50dp"
             android:layout_marginBottom="8dp"
             android:text="Pressed - Darker"
-            drawme:backColor="@color/colorAccent"
-            drawme:maskColorPressed="#8D000000"
-            drawme:rippleUseControlHighlight="false"
-            drawme:textColor="@android:color/white"/>
+            drawme:dm_backColor="@color/colorAccent"
+            drawme:dm_maskColorPressed="#8D000000"
+            drawme:dm_rippleUseControlHighlight="false"
+            drawme:dm_textColor="@android:color/white"/>
 
         <com.rafakob.drawme.DrawMeButton
             android:id="@+id/mask_light"
@@ -278,10 +278,10 @@
             android:layout_height="50dp"
             android:layout_marginBottom="8dp"
             android:text="Pressed - Lighter"
-            drawme:backColor="@color/colorAccent"
-            drawme:maskColorPressed="#8DFFFFFF"
-            drawme:rippleUseControlHighlight="false"
-            drawme:textColor="@android:color/white"/>
+            drawme:dm_backColor="@color/colorAccent"
+            drawme:dm_maskColorPressed="#8DFFFFFF"
+            drawme:dm_rippleUseControlHighlight="false"
+            drawme:dm_textColor="@android:color/white"/>
 
         <com.rafakob.drawme.DrawMeButton
             android:layout_width="match_parent"
@@ -289,9 +289,9 @@
             android:layout_marginBottom="8dp"
             android:enabled="false"
             android:text="Disabled - Default"
-            drawme:backColor="@color/colorAccent"
-            drawme:rippleUseControlHighlight="false"
-            drawme:textColor="@android:color/white"/>
+            drawme:dm_backColor="@color/colorAccent"
+            drawme:dm_rippleUseControlHighlight="false"
+            drawme:dm_textColor="@android:color/white"/>
 
         <com.rafakob.drawme.DrawMeButton
             android:layout_width="match_parent"
@@ -299,10 +299,10 @@
             android:layout_marginBottom="8dp"
             android:enabled="false"
             android:text="Disabled - Custom"
-            drawme:backColor="@color/colorAccent"
-            drawme:maskColorDisabled="#CCFFFFFF"
-            drawme:rippleUseControlHighlight="false"
-            drawme:textColor="@android:color/white"/>
+            drawme:dm_backColor="@color/colorAccent"
+            drawme:dm_maskColorDisabled="#CCFFFFFF"
+            drawme:dm_rippleUseControlHighlight="false"
+            drawme:dm_textColor="@android:color/white"/>
 
         <TextView
             style="@style/TextDivider"
@@ -313,9 +313,9 @@
             android:layout_height="50dp"
             android:layout_marginBottom="8dp"
             android:text="Normal"
-            drawme:backColor="@color/colorGreen"
-            drawme:rippleUseControlHighlight="false"
-            drawme:textColor="@android:color/white"/>
+            drawme:dm_backColor="@color/colorGreen"
+            drawme:dm_rippleUseControlHighlight="false"
+            drawme:dm_textColor="@android:color/white"/>
 
         <com.rafakob.drawme.DrawMeButton
             android:id="@+id/ada1"
@@ -323,9 +323,9 @@
             android:layout_height="50dp"
             android:layout_marginBottom="8dp"
             android:text="Normal pressed - default"
-            drawme:backColor="@color/colorGreen"
-            drawme:rippleUseControlHighlight="false"
-            drawme:textColor="@android:color/white"/>
+            drawme:dm_backColor="@color/colorGreen"
+            drawme:dm_rippleUseControlHighlight="false"
+            drawme:dm_textColor="@android:color/white"/>
 
 
         <com.rafakob.drawme.DrawMeButton
@@ -333,9 +333,9 @@
             android:layout_height="50dp"
             android:layout_marginBottom="8dp"
             android:text="Dark normal"
-            drawme:backColor="@color/colorGreenDark"
-            drawme:rippleUseControlHighlight="false"
-            drawme:textColor="@android:color/white"/>
+            drawme:dm_backColor="@color/colorGreenDark"
+            drawme:dm_rippleUseControlHighlight="false"
+            drawme:dm_textColor="@android:color/white"/>
 
         <com.rafakob.drawme.DrawMeButton
             android:id="@+id/ada2"
@@ -343,9 +343,9 @@
             android:layout_height="50dp"
             android:layout_marginBottom="8dp"
             android:text="Dark normal pressed - Default"
-            drawme:backColor="@color/colorGreenDark"
-            drawme:rippleUseControlHighlight="false"
-            drawme:textColor="@android:color/white"/>
+            drawme:dm_backColor="@color/colorGreenDark"
+            drawme:dm_rippleUseControlHighlight="false"
+            drawme:dm_textColor="@android:color/white"/>
 
         <com.rafakob.drawme.DrawMeButton
             android:id="@+id/ada3"
@@ -353,10 +353,10 @@
             android:layout_height="50dp"
             android:layout_marginBottom="8dp"
             android:text="Dark normal pressed - Adaptive"
-            drawme:backColor="@color/colorGreenDark"
-            drawme:maskBrightnessThreshold="0.2"
-            drawme:rippleUseControlHighlight="false"
-            drawme:textColor="@android:color/white"/>
+            drawme:dm_backColor="@color/colorGreenDark"
+            drawme:dm_maskBrightnessThreshold="0.2"
+            drawme:dm_rippleUseControlHighlight="false"
+            drawme:dm_textColor="@android:color/white"/>
 
         <com.rafakob.drawme.DrawMeButton
             android:id="@+id/ada4"
@@ -364,11 +364,11 @@
             android:layout_height="50dp"
             android:layout_marginBottom="8dp"
             android:text="Dark pressed dark - Lighter"
-            drawme:backColor="@color/colorGreenDark"
-            drawme:maskBrightnessThreshold="0.2"
-            drawme:maskColorPressedInverse="#9DFFFFFF"
-            drawme:rippleUseControlHighlight="false"
-            drawme:textColor="@android:color/white"/>
+            drawme:dm_backColor="@color/colorGreenDark"
+            drawme:dm_maskBrightnessThreshold="0.2"
+            drawme:dm_maskColorPressedInverse="#9DFFFFFF"
+            drawme:dm_rippleUseControlHighlight="false"
+            drawme:dm_textColor="@android:color/white"/>
 
     </LinearLayout>
 </ScrollView>

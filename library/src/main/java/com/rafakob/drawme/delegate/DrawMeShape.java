@@ -66,32 +66,32 @@ public class DrawMeShape implements DrawMe {
     }
 
     protected void obtainShapeAttributes(TypedArray a) {
-        rippleEffect = a.getBoolean(R.styleable.DrawMe_rippleEffect, true);
-        rippleUseControlHighlight = a.getBoolean(R.styleable.DrawMe_rippleUseControlHighlight, true);
-        statePressed = a.getBoolean(R.styleable.DrawMe_statePressed, true);
-        stateDisabled = a.getBoolean(R.styleable.DrawMe_stateDisabled, true);
-        shapeEqualWidthHeight = a.getBoolean(R.styleable.DrawMe_shapeEqualWidthHeight, false);
-        shapeRadiusHalfHeight = a.getBoolean(R.styleable.DrawMe_shapeRadiusHalfHeight, false);
+        rippleEffect = a.getBoolean(R.styleable.DrawMe_dm_rippleEffect, true);
+        rippleUseControlHighlight = a.getBoolean(R.styleable.DrawMe_dm_rippleUseControlHighlight, true);
+        statePressed = a.getBoolean(R.styleable.DrawMe_dm_statePressed, true);
+        stateDisabled = a.getBoolean(R.styleable.DrawMe_dm_stateDisabled, true);
+        shapeEqualWidthHeight = a.getBoolean(R.styleable.DrawMe_dm_shapeEqualWidthHeight, false);
+        shapeRadiusHalfHeight = a.getBoolean(R.styleable.DrawMe_dm_shapeRadiusHalfHeight, false);
 
-        maskBrightnessThreshold = a.getFloat(R.styleable.DrawMe_maskBrightnessThreshold, 0);
-        maskColorPressed = a.getColor(R.styleable.DrawMe_maskColorPressed, Color.parseColor("#1F000000"));
-        maskColorPressedInverse = a.getColor(R.styleable.DrawMe_maskColorPressedInverse, Color.parseColor("#1DFFFFFF"));
-        maskColorDisabled = a.getColor(R.styleable.DrawMe_maskColorDisabled, Color.parseColor("#6DFFFFFF"));
+        maskBrightnessThreshold = a.getFloat(R.styleable.DrawMe_dm_maskBrightnessThreshold, 0);
+        maskColorPressed = a.getColor(R.styleable.DrawMe_dm_maskColorPressed, Color.parseColor("#1F000000"));
+        maskColorPressedInverse = a.getColor(R.styleable.DrawMe_dm_maskColorPressedInverse, Color.parseColor("#1DFFFFFF"));
+        maskColorDisabled = a.getColor(R.styleable.DrawMe_dm_maskColorDisabled, Color.parseColor("#6DFFFFFF"));
 
-        stroke = a.getDimensionPixelSize(R.styleable.DrawMe_stroke, 0);
-        radius = a.getDimensionPixelSize(R.styleable.DrawMe_radius, 0);
-        radiusBottomLeft = a.getDimensionPixelSize(R.styleable.DrawMe_radiusBottomLeft, -1);
-        radiusBottomRight = a.getDimensionPixelSize(R.styleable.DrawMe_radiusBottomRight, -1);
-        radiusTopLeft = a.getDimensionPixelSize(R.styleable.DrawMe_radiusTopLeft, -1);
-        radiusTopRight = a.getDimensionPixelSize(R.styleable.DrawMe_radiusTopRight, -1);
+        stroke = a.getDimensionPixelSize(R.styleable.DrawMe_dm_stroke, 0);
+        radius = a.getDimensionPixelSize(R.styleable.DrawMe_dm_radius, 0);
+        radiusBottomLeft = a.getDimensionPixelSize(R.styleable.DrawMe_dm_radiusBottomLeft, -1);
+        radiusBottomRight = a.getDimensionPixelSize(R.styleable.DrawMe_dm_radiusBottomRight, -1);
+        radiusTopLeft = a.getDimensionPixelSize(R.styleable.DrawMe_dm_radiusTopLeft, -1);
+        radiusTopRight = a.getDimensionPixelSize(R.styleable.DrawMe_dm_radiusTopRight, -1);
 
-        backColor = a.getColor(R.styleable.DrawMe_backColor, Color.TRANSPARENT);
-        backColorPressed = a.getColor(R.styleable.DrawMe_backColorPressed, defaultPressedColor(backColor));
-        backColorDisabled = a.getColor(R.styleable.DrawMe_backColorDisabled, defaultDisabledColor(backColor));
+        backColor = a.getColor(R.styleable.DrawMe_dm_backColor, Color.TRANSPARENT);
+        backColorPressed = a.getColor(R.styleable.DrawMe_dm_backColorPressed, defaultPressedColor(backColor));
+        backColorDisabled = a.getColor(R.styleable.DrawMe_dm_backColorDisabled, defaultDisabledColor(backColor));
 
-        strokeColor = a.getColor(R.styleable.DrawMe_strokeColor, Color.GRAY);
-        strokeColorPressed = a.getColor(R.styleable.DrawMe_strokeColorPressed, defaultPressedColor(strokeColor));
-        strokeColorDisabled = a.getColor(R.styleable.DrawMe_strokeColorDisabled, defaultDisabledColor(strokeColor));
+        strokeColor = a.getColor(R.styleable.DrawMe_dm_strokeColor, Color.GRAY);
+        strokeColorPressed = a.getColor(R.styleable.DrawMe_dm_strokeColorPressed, defaultPressedColor(strokeColor));
+        strokeColorDisabled = a.getColor(R.styleable.DrawMe_dm_strokeColorDisabled, defaultDisabledColor(strokeColor));
     }
 
     @Override

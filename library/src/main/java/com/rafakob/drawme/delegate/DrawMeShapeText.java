@@ -29,13 +29,13 @@ public class DrawMeShapeText extends DrawMeShape {
     }
 
     protected void obtainTextAttributes(TypedArray a) {
-        font = a.getString(R.styleable.DrawMeText_font);
-        textColor = a.getColor(R.styleable.DrawMeText_textColor, ((TextView) mView).getTextColors().getDefaultColor());
-        textColorPressed = a.getColor(R.styleable.DrawMeText_textColorPressed, textColor);
-        textColorDisabled = a.getColor(R.styleable.DrawMeText_textColorDisabled, textColor);
+        font = a.getString(R.styleable.DrawMeText_dm_font);
+        textColor = a.getColor(R.styleable.DrawMeText_dm_textColor, ((TextView) mView).getTextColors().getDefaultColor());
+        textColorPressed = a.getColor(R.styleable.DrawMeText_dm_textColorPressed, textColor);
+        textColorDisabled = a.getColor(R.styleable.DrawMeText_dm_textColorDisabled, textColor);
 
-        tintColor = a.getColor(R.styleable.DrawMeText_drawableTint, 0);
-        tintMode = a.getInt(R.styleable.DrawMeText_drawableTintMode, 0);
+        tintColor = a.getColor(R.styleable.DrawMeText_dm_drawableTint, 0);
+        tintMode = a.getInt(R.styleable.DrawMeText_dm_drawableTintMode, 0);
 
         Drawable left = tintDrawable(a.getDrawable(R.styleable.DrawMeText_android_drawableLeft));
         Drawable start = tintDrawable(a.getDrawable(R.styleable.DrawMeText_android_drawableStart));
