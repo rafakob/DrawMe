@@ -6,6 +6,7 @@ import android.content.res.TypedArray;
 import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
+import android.support.annotation.AttrRes;
 import android.support.v4.graphics.drawable.DrawableCompat;
 import android.text.TextUtils;
 import android.util.AttributeSet;
@@ -23,9 +24,16 @@ public class DrawMeShapeText extends DrawMeShape {
     protected int tintColor;
     protected int tintMode;
 
+    public DrawMeShapeText(Context context, View view) {
+        super(context, view);
+    }
 
     public DrawMeShapeText(Context context, View view, AttributeSet attrs) {
         super(context, view, attrs);
+    }
+
+    public DrawMeShapeText(Context context, View view, AttributeSet attrs, @AttrRes int defStyleAttr) {
+        super(context, view, attrs, defStyleAttr);
     }
 
     protected void obtainTextAttributes(TypedArray a) {
@@ -48,9 +56,9 @@ public class DrawMeShapeText extends DrawMeShape {
     }
 
     @Override
-    public void obtainAttributes(Context context, AttributeSet attrs) {
-        super.obtainAttributes(context, attrs);
-        TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.DrawMeText);
+    public void obtainAttributes(Context context, AttributeSet attrs, @AttrRes int defStyleAttr) {
+        super.obtainAttributes(context, attrs, defStyleAttr);
+        TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.DrawMeText, defStyleAttr, 0);
         obtainTextAttributes(typedArray);
         typedArray.recycle();
 
