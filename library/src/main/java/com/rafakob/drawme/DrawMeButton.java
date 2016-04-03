@@ -1,23 +1,27 @@
 package com.rafakob.drawme;
 
 import android.content.Context;
+import android.support.v7.widget.AppCompatButton;
 import android.util.AttributeSet;
-import android.widget.Button;
 
 import com.rafakob.drawme.delegate.DrawMe;
 import com.rafakob.drawme.delegate.DrawMeShapeText;
 
-public class DrawMeButton extends Button {
+public class DrawMeButton extends AppCompatButton {
+
     private final DrawMe drawMe;
 
     public DrawMeButton(Context context) {
-        super(context);
-        drawMe = new DrawMeShapeText(context, this, null);
+        this(context, null);
     }
 
     public DrawMeButton(Context context, AttributeSet attrs) {
-        super(context, attrs);
-        drawMe = new DrawMeShapeText(context, this, attrs);
+        this(context, attrs, R.attr.buttonStyle);
+    }
+
+    public DrawMeButton(Context context, AttributeSet attrs, int defStyleAttr) {
+        super(context, attrs, defStyleAttr);
+        drawMe = new DrawMeShapeText(context, this, attrs, defStyleAttr);
     }
 
     @Override

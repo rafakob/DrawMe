@@ -10,6 +10,7 @@ import android.graphics.drawable.GradientDrawable;
 import android.graphics.drawable.RippleDrawable;
 import android.graphics.drawable.StateListDrawable;
 import android.os.Build;
+import android.support.annotation.AttrRes;
 import android.support.annotation.ColorInt;
 import android.util.AttributeSet;
 import android.view.View;
@@ -54,13 +55,21 @@ public class DrawMeShape implements DrawMe {
     protected boolean shapeEqualWidthHeight;
     protected boolean shapeRadiusHalfHeight;
 
-    public DrawMeShape(Context context, View view, AttributeSet attrs) {
-        this.mView = view;
-        obtainAttributes(context, attrs);
+    public DrawMeShape(Context context, View view) {
+        this(context, view, null);
     }
 
-    public void obtainAttributes(Context context, AttributeSet attrs) {
-        TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.DrawMe);
+    public DrawMeShape(Context context, View view, AttributeSet attrs) {
+        this(context, view, attrs, 0);
+    }
+
+    public DrawMeShape(Context context, View view, AttributeSet attrs, @AttrRes int defStyleAttr) {
+        this.mView = view;
+        obtainAttributes(context, attrs, defStyleAttr);
+    }
+
+    public void obtainAttributes(Context context, AttributeSet attrs, @AttrRes int defStyleAttr) {
+        TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.DrawMe, defStyleAttr, 0);
         obtainShapeAttributes(typedArray);
         typedArray.recycle();
     }

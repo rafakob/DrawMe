@@ -6,9 +6,9 @@
     android:layout_height="match_parent">
 
     <LinearLayout
-        android:background="@android:color/white"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@android:color/white"
         android:orientation="vertical"
         android:paddingBottom="16dp"
         android:paddingLeft="16dp"
@@ -177,11 +177,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="8dp"
             android:clickable="true"
             android:gravity="center_horizontal"
             android:padding="12dp"
             android:text="My text"
-            android:layout_marginBottom="8dp"
 
             android:textAllCaps="true"
             android:textSize="18sp"
@@ -198,8 +198,8 @@
             android:layout_marginBottom="8dp"
             android:drawableLeft="@drawable/ic_vector_cloud"
             android:drawablePadding="16dp"
-            android:padding="8dp"
             android:hint="EditText with tinted icon"
+            android:padding="8dp"
             drawme:dm_drawableTint="@color/colorAccent"/>
 
         <TextView
@@ -369,6 +369,23 @@
             drawme:dm_maskColorPressedInverse="#9DFFFFFF"
             drawme:dm_rippleUseControlHighlight="false"
             drawme:dm_textColor="@android:color/white"/>
+
+        <TextView
+            style="@style/TextDivider"
+            android:text="#09: Other"/>
+
+        <FrameLayout
+            android:theme="@style/AppTheme.ThemeButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp">
+
+            <com.rafakob.drawme.DrawMeButton
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Style from theme"/>
+
+        </FrameLayout>
 
     </LinearLayout>
 </ScrollView>
