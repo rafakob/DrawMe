@@ -3,10 +3,13 @@ package com.rafakob.drawme.delegate;
 import android.content.Context;
 import android.content.res.ColorStateList;
 import android.content.res.TypedArray;
+import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.support.annotation.AttrRes;
+import android.support.annotation.ColorInt;
+import android.support.annotation.FloatRange;
 import android.support.v4.graphics.drawable.DrawableCompat;
 import android.text.TextUtils;
 import android.util.AttributeSet;
@@ -38,7 +41,7 @@ public class DrawMeShapeText extends DrawMeShape {
 
     protected void obtainTextAttributes(TypedArray a) {
         font = a.getString(R.styleable.DrawMeText_dm_font);
-        textColor = a.getColor(R.styleable.DrawMeText_dm_textColor, ((TextView) mView).getTextColors().getDefaultColor());
+        textColor = a.getColor(R.styleable.DrawMeText_dm_textColor, getTitleColor(backColor));
         textColorPressed = a.getColor(R.styleable.DrawMeText_dm_textColorPressed, textColor);
         textColorDisabled = a.getColor(R.styleable.DrawMeText_dm_textColorDisabled, textColor);
 
@@ -151,5 +154,19 @@ public class DrawMeShapeText extends DrawMeShape {
 
             ((TextView) mView).setTextColor(colorStateList);
         }
+    }
+
+    @ColorInt
+    private int getTitleColor(@ColorInt int color) {
+        double darkness = 1-(0.299* Color.red(color) + 0.587*Color.green(color) + 0.114*Color.blue(color))/255;
+        return (darkness < 0.35) ? getDarkerColor(color, 0.25f) : Color.WHITE;
+    }
+
+    @ColorInt
+    private int getDarkerColor(@ColorInt int color, @FloatRange(from = 0.0f, to = 1.0f) float transparency) {
+        float[] hsv = new float[3];
+        Color.colorToHSV(color, hsv);
+        hsv[2] *= transparency;
+        return Color.HSVToColor(hsv);
     }
 }
